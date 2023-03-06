@@ -1,2 +1,6 @@
 #/bin/bash
+if [ -z "$PYCODE"];
+echo "error: file is empty";
+exit(1);
+fi
 python -c $PYCODE
