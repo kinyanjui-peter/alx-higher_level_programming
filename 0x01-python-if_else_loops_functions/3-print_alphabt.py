@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 # Prints ascii letters
 for i in range(97, 123):
-   if (i != 113 and i != 101):
-       print("{}".format(chr(i)), end="")
-
+    if (i != 113 and i != 101):
+        print("{}".format(chr(i)), end="")
