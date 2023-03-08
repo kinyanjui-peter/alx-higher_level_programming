@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-# Prints possible combination between 0 to 89
-for i in range(0, 90):
-    if i != 10 and i != 89:
-        for x in range(i + 1, 10):
+# Prints possibl combination between 0 to 89
+for i in range(0, 10):
+    for x in range(i + 1, 10):
+        if i != 8 and i != 9:
             print("{}{}, ".format(i, x), end="")
-    if i == 89:
-        print("{}".format(i, x))
+        else:
+            print("{}{}".format(i, x))
