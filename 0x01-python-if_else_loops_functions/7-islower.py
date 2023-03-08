@@ -5,7 +5,3 @@ def islower(c):
         return True
     else:
         return False
-
-
-name = input("Enter a character: ")
-print(islower(name))
