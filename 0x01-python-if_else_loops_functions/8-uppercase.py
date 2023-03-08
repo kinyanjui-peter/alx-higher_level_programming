@@ -5,4 +5,5 @@ def upper(str):
         if ord(str[i]) >= 97 and ord(str[i]) <= 122:
             nxt = chr(ord(str[i]) - 32)
             print("{}".format(nxt), end="")
-            print("")
+        else:
+            print("{}".format(str[i]), end="")
