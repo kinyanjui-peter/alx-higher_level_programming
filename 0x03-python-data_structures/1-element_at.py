@@ -5,8 +5,3 @@ def element_at(my_list, idx):
     if idx < 0 or idx > (len(my_list) - 1):
         return None
     return (my_list[idx])
-
-
-idx = int(input("enter the index: "))
-my_list = [1, 2, 3, 4, 5]
-print(f"{element_at(my_list, idx)}")
