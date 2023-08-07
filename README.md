@@ -1,2 +1,2 @@
-# alx-higher_level_programming
-learning python 
+alx -high level programming language
+python learning
