@@ -2,6 +2,8 @@
 def pow(a, b):
     mul = 1
     for i in range(b):
-        mul *= a
+            mul *= a
+    for i in range(-b):
+            mul /= a
 #    print("{}".format(mul))
     return mul
