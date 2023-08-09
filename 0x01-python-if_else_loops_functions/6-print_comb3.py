@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-for num in range(0, 8):
-    for x in range(num + 1, 10):
-#        if num != x:
-#            if (num == 8) and (x == 9):
-        print("{:d}{:d}". format(num, x), end=", ")
-#                break
-print("{:d}{:d}". format(num + 1, x))
-#    num += 1
-
+for i in range(10):
+    for j in range(i+1, 10):
+        print("{:d}{:d}".format(i, j), end="")
+        if i != 8 or j != 9:
+            print(", ", end="")
+print()
