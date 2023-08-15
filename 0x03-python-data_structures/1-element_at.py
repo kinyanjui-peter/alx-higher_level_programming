@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-def replace_in_list(my_list, idx, element):
-    if idx > 0:
-        new_list = my_list.copy[:]
-        new_list[idx] = element
-        print("{}".format(new_list)
+
+def element_at(my_list, idx):
+    if idx < 0:
+        return None
+    elif idx >= len(my_list):
+        return None
     else:
-                return mylist(idx)
-    if idx > len(mylist):
-        return my_list
+        return my_list.pop(idx)
