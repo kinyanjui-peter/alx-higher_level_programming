@@ -1,12 +1,6 @@
 #!/usr/bin/python3
-#my_list - initial list
-#search - element to replace the list
-#replace - new element
-def search_replace(my_list, search, replace):
-    for i in my_list:
-        if i == search:
-            replace = search
-            print(replace)
-        else:
-            print(i)
-
+def uniq_add(my_list=[]):
+    my_set = set(my_list)
+    unique_list = list(my_set)
+    total = sum(unique_list)
+    return total
