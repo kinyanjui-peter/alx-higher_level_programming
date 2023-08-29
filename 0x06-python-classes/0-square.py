@@ -3,4 +3,4 @@
 
 
 class Square:
-    pass
+    """ class has no attributes"""
