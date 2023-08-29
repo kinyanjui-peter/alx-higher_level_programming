@@ -8,9 +8,11 @@ class Square:
         """args:
                 size: the size of square"""
         self.size = size
+
         @property
         def size(self):
             return self._size
+
         @size.setter
         def size(self, value):
             if not(isinstance(size, int)):
