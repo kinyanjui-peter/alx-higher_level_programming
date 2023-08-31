@@ -7,7 +7,7 @@ class Square:
     def __init__(self, size=0):
         """args:
                 size: the size of square"""
-        self.size = size
+        self._size = size
 
         @property
         def size(self):
@@ -17,19 +17,20 @@ class Square:
         def size(self, value):
             if not(isinstance(size, int)):
                 raise TypeError("size must be an integer")
-            if size < 0:
+            if value < 0:
                 raise ValueError("size must be >= 0")
                 """calculate the square of an area"""
             self._size = value
 
     def area(self):
-        return self.size ** 2
+        return self._size ** 2
     
     def my_print(self):
-        if self.size == 0:
+        if self._size == 0:
             print("")
         else:
-            ar = self.area()
-        for i in range (ar):
-            print("#", end="")
-        print("")
+            for i in range(self._size):
+                for _ in range(self._size):
+                    print("#", end="")
+                print("")
+        
