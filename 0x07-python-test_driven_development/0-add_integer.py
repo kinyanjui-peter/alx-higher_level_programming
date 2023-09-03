@@ -1,7 +1,16 @@
 #!/usr/bin/python3
-"""implementation of the add function"""
+"""
+    implementation of the add function
+    The function adds 2 numbers a and b
+    Raises:TypeError if a or b are not integers or float
+    """
 def add_integer(a, b=98):
-    """ the function adds 2 numbers a and b
+    """
+    return the addition of a and b
+    args:
+        a(int, float) the first number
+        b(int, float) the second number
+
     >>> add_integer(4, 10)
     14
     >>> add_integer(4, 'School')
@@ -22,7 +31,7 @@ def add_integer(a, b=98):
     if not isinstance(b, (int, float)):
         raise TypeError('b must be an integer')
     if isinstance(a, float) and isinstance(b, float):
-        x = int(a)
-        y = int(b)
+        a = int(a)
+        b = int(b)
 
-    return x + y
+    return a + b

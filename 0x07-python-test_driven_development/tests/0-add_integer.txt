@@ -1,0 +1,29 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+#add positive number
+>>> add(1, 2)
+3
+
+>>> add(0)
+0
+
+>>> add(2, 1.3)
+3
+
+>>> add(.1)
+0.1
+
+#add string
+>>> add(1, 'peter')
+traceback(most recent call):
+    ...
+    TypeError(' b must be int or float')
+
+>>> add('peter', 3)
+traceback(most recent call):
+    ...
+    TypeError(' a must be int or float')
+
+>>> add('peter')
+traceback(most recent call):
+    ...
+    TypeError('a and  b must be int or float')
