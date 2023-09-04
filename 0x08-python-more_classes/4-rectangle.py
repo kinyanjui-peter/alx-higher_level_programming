@@ -58,6 +58,6 @@ class Rectangle:
             for _ in range(self._height):
                 rectangle_str += "#" * self._width + "\n"
             return rectangle_str
-    
-    def __repr__(self):
-        return f'Rectangle({self._width}, {self._height})'
+
+        def __repr__(self):
+            return f'Rectangle({self._width}, {self._height})'
