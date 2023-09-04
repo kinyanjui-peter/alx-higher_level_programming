@@ -2,6 +2,8 @@
 """
 An empty class that defines a rectangle
 """
+
+
 class Rectangle:
     """
     assignment of width and height of a rectangle
@@ -13,7 +15,6 @@ class Rectangle:
     @property
     def width(self):
         return self._width
-
 
     @width.setter
     def width(self, value):
@@ -36,4 +37,5 @@ class Rectangle:
         self._height = value
 
     def __str__(self):
-        return "{'_Rectangle__height':" + str(self._height) + ", '_Rectangle__width':" + str(self._width)+ "}"
+        return "{'_Rectangle__height':" + str(self._height) + ",\
+                '_Rectangle__width':" + str(self._width) + "}"
