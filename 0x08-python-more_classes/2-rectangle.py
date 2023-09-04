@@ -39,7 +39,7 @@ class Rectangle:
     def __str__(self):
         return "{'_Rectangle__height':" + str(self._height) + ",\
                 '_Rectangle__width':" + str(self._width) + "}"
-    
+
     def area(self):
         return self._width * self._height
 
