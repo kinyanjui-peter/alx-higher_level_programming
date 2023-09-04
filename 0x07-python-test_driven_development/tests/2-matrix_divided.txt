@@ -1,0 +1,23 @@
+matrix_divided = __import__("2-matrix_divided").matrix_divided
+#check if matrix is a list and each element is an int or float
+>>> if type(matrix) is not list
+traceback (traceback most recent call):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+#check if all rows are of the same size
+
+
+#check if div is an int or float
+if type(div) is not int or float
+traceback most recent call last
+...
+TypeError: div must be int or float
+
+#check if div equal zero
+if div == zero
+traceback most recent call last
+...
+ZeroDivisionError: cannot divide by zero
+
+#ensure that all elements of a matrix are divisible by div rounded to 2 sf
