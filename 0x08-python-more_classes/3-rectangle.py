@@ -48,8 +48,8 @@ class Rectangle:
             return 0
         else:
             return (self._width + self._height) * 2
-        #print a reactangle of height and length indicated
-        
+        # print a reactangle of height and length indicated
+
     def __str__(self):
         if self._width == 0 or self._height == 0:
             return ""
