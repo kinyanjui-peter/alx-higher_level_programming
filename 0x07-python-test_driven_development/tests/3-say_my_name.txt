@@ -1,0 +1,35 @@
+from 3-say_my_name import say_my_name
+----string input-----
+>>> say_my_name('peter', 'kinyanjui')
+'peter kinyanjui'
+
+>>> say_my_name('melvis', 'ndungu')
+'melvis ndungu'
+
+>>> say_my_name('eddy', 'muya')
+'eddy muya'
+
+>>> say_my_name('loise')
+'loise'
+
+---test with int---
+>>> say_my_name('9', 'kinyanjui')
+traceback (most recent call last)
+...
+TypeError: first_name must be a string
+
+>>> say_my_name('loise', '89 ')
+traceback (most recent call last)
+...
+TypeError: second_name must be a string
+
+>>> say_my_name('9')
+traceback (most recent call last)
+...
+TypeError: first_name and last_name must be a string
+
+>>> say_my_name('')
+traceback (most recent call last)
+...
+TypeError: enter first_name and last_name
+
