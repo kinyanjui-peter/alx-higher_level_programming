@@ -5,4 +5,5 @@ class LockedClass:
             # Allow setting the 'first_name' attribute
             super().__setattr__(name, value)
         else:
-            raise AttributeError(f"'LockedClass' object has no attribute 'last_name'")
+            raise AttributeError(
+                    f"'LockedClass' object has no attribute 'last_name'")
