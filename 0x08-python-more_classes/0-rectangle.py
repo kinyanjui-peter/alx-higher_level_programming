@@ -2,7 +2,9 @@
 """
 An empty class that defines a rectangle
 """
-class Rectangle :
+
+
+class Rectangle:
     """
     class takes no argument
     """
