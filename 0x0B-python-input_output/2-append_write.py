@@ -11,7 +11,7 @@ def append_write(filename="", text=""):
     """error handling"""
     try:
         with open(filename, encoding='utf-8', mode='a+') as file:
-            appended_file = file.write(text)
+            appended_file = file.append(text)
             char_added = len(text)
             return char_added
     except Exception as e:
