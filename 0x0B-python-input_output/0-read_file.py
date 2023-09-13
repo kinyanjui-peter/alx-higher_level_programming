@@ -14,10 +14,11 @@ def read_file(filename=""):
         with open(filename, encoding='UTF8', mode='r') as file:
             file.seek(0)
             line = file.read()
-                print(line, end="")
-                """
-                file not found error"""
+            print(line, end="")
+            """
+            file not found error
+            """
     except FileNotFound:
-        print(f"File *'{}' not found.")
+        print(f"File *'{filename}' not found.")
     except exception as e:
         print(f" Error occured")
