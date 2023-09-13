@@ -10,6 +10,12 @@ def read_file(filename=""):
     """
      use the with statement
      """
-    with open(filename, encoding='UTF8',mode='r') as file:
-        file.seek(0)
-        print(file.read())
+    try:
+        with open(filename, encoding='UTF8', mode='r') as file:
+            file.seek(0)
+            for line in filename:
+                print(line, end="")
+    except FileNotFound:
+        print(f"File *'{}' not found.")
+    except exception as e:
+        print(f" Error occured")
