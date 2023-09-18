@@ -13,6 +13,22 @@ class Square(Rectangle):
     def __str__(self):
         """Return a string representation of the Square instance"""
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
+    @property
+    def size(self):
+        """Getter method for size
+        Size is the same as width and height
+        """
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        """Setter method for size"""
+        if not isinstance(value, int):
+            raise TypeError("width must be an integer")
+        if value <= 0:
+            raise ValueError("width must be > 0")
+        self.width = value
+        self.height = value
 
     def update(self, *args, **kwargs):
         """Update attributes with provided arguments and/or keyword arguments"""
