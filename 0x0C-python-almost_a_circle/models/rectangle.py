@@ -86,7 +86,7 @@ class Rectangle(Base):
         return (f"[Rectangle] ({self.id}) {self.x}/{self.x} - {self.width}/{self.height}")
 
     """add the public method that assigns an argument to each attribute:"""
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         if args:
             if len(args) > 1:
                 self.id = args[0]
@@ -98,5 +98,15 @@ class Rectangle(Base):
                 self.x = args[3]
             if len(args) > 5:
                 self.y = args[4]
-
-
+        else:
+            for key, value in kwargs.items():
+                if key == 'id':
+                    self.id = value
+                if key == 'width':
+                    self.width = value
+                if key == 'height':
+                    self.height = value
+                if key == 'x':
+                    self.x = value
+                if key == 'y':
+                    self.y = value
