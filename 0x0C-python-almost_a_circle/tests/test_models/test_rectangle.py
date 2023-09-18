@@ -2,6 +2,7 @@
 """import unittest"""
 import unittest
 """ import the base module to be tested"""
+"""AREA"""
 from models.rectangle import rectangle(Base)
 class width(self):
     """test if value of width is NULL"""
