@@ -9,10 +9,10 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initialize Rectangle instance"""
         super().__init__(id) #calling superclass
-        self.width = width
-        self.height = height
-        self.x = x
-        self.y = y
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
 
     @property
     def width(self):
@@ -110,3 +110,13 @@ class Rectangle(Base):
                     self.x = value
                 if key == 'y':
                     self.y = value
+
+    def to_dictionary(self):
+        """Returns dict representation of a Rectangle"""
+        return {
+            "x": self.x,
+            "y": self.__y,
+            "id": self.id,
+            "height": self.__height,
+            'width': self.__width,
+        }
