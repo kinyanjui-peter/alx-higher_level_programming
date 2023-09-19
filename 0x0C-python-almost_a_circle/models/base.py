@@ -30,11 +30,11 @@ class Base:
         class_name = cls.__name__
         filename = f"{class_name}.json"
 
-        if len(list_objs) == 0:
+        if list_objs is None:
             json_data = "([])"
         else:
             dict_list = [obj.to_dictionary() for obj in list_objs]
             json_data = cls.to_json_string(dict_list)
         """open the file"""
         with open(filename, "w") as json_file:
-            json_file.write(list_objs)
+            json_file.write(json.data)
