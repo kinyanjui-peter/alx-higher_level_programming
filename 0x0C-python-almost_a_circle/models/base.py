@@ -2,6 +2,8 @@
 """import JSON"""
 import json
 """creation of class base"""
+
+
 class Base:
     """private class attribute"""
     __nb_objects = 0
@@ -22,4 +24,3 @@ class Base:
                 return "[]"
         else:
             return json.dumps(list_dictionaries)
-
