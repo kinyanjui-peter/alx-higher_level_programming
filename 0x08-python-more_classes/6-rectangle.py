@@ -12,7 +12,7 @@ class Rectangle:
         widthe(int): widthe of the rectangle
         height(int): height of the recrangle
     """
-    number_of_instances=0
+    number_of_instances = 0
     """
     assignment of width and height of a rectangle
     """
