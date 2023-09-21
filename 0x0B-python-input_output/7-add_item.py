@@ -1,24 +1,22 @@
 #!/usr/bin/python3
-""""
-    adds all arguments to a Python list
-    """
-
 import sys
-from unicodedata import name
-
 if __name__ == "__main__":
     save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
     load_from_json_file = __import__(
         '6-load_from_json_file').load_from_json_file
 
-    name = "add_item.json"
-    arg = sys.argv[1:0]
+# Check if "add_item.json" exists and load its content if it exists.
+try:
+    existing_data = load_from_json_file("add_item.json")
+except FileNotFoundError:
+    existing_data = []
 
-    try:
-        d = load_from_json_file(name)
+# Add command-line arguments to the existing data list.
+arguments = sys.argv[1:]  # Exclude the script name itself.
+existing_data.extend(arguments)
 
-    except FileNotFoundError:
-        d = []
+# Save the updated list to "add_item.json".
+save_to_json_file(existing_data, "add_item.json")
 
-    d.extend(arg)
-    save_to_json_file(d, name)
+#Arguments added and saved successfully to add_item.json.
+
