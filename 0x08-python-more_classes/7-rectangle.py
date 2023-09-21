@@ -61,13 +61,11 @@ class Rectangle:
         # print a reactangle of height and length indicated
 
     def __str__(self):
-        if self._width == 0 or self._height == 0:
-            return ""
-        else:
-            rectangle_str = ""
-            for _ in range(self._height):
-                rectangle_str += "#" * self._width + "\n"
-            return rectangle_str
+        rectangle_str = ""
+        if self._width > 0 and self._height > 0:
+            for y in range(self._height):
+                rectangle_str += str(self.print_symbol) * self._width + "\n"
+        return rectangle_str[:1]
 
     def __repr__(self):
         return f'Rectangle({self._width}, {self._height})'
