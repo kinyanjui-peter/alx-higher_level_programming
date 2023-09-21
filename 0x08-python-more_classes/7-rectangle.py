@@ -12,7 +12,7 @@ class Rectangle:
         widthe(int): widthe of the rectangle
         height(int): height of the recrangle
     """
-    number_of_instances=0
+    number_of_instances = 0
     print_symbol = '#'
     """
     assignment of width and height of a rectangle
@@ -61,11 +61,14 @@ class Rectangle:
         # print a reactangle of height and length indicated
 
     def __str__(self):
-        rectangle_str = ""
+        """Sets the print behavior of the Rectangle object."""
+        rectangle = ""
+
         if self._width > 0 and self._height > 0:
             for y in range(self._height):
-                rectangle_str += str(self.print_symbol) * self._width + "\n"
-        return rectangle_str[:1]
+                rectangle += str(self.print_symbol) * self._width + '\n'
+
+        return rectangle[:-1]
 
     def __repr__(self):
         return f'Rectangle({self._width}, {self._height})'
