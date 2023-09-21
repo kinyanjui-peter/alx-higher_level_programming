@@ -94,6 +94,6 @@ class Rectangle:
         """
         returns a new Rectangle instance with width == height == size
         """
-        width = size
-        height = size
-        return cls(width, height)
+       # width = size
+       # height = size
+        return cls(size, size)
