@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""json string"""
 import json
 """function that returns
 the JSON representation of an object (string)
@@ -11,6 +12,4 @@ def to_json_string(my_obj):
             @my_obj: object to be converted to JSON
             returns: JSON string
             """
-
-    convertedto_json = json.dumps(my_obj)
-    return convertedto_json
+    return json.dumps(my_obj)
