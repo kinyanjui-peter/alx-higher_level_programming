@@ -5,6 +5,13 @@ An empty class that defines a rectangle
 
 
 class Rectangle:
+    """
+    Docstring for my class
+    the class performs various function like str, are a etc
+    Attributes:
+        widthe(int): widthe of the rectangle
+        height(int): height of the recrangle
+    """
     number_of_instances=0
     """
     assignment of width and height of a rectangle
