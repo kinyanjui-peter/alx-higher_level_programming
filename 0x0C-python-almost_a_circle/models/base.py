@@ -44,3 +44,25 @@ class Base:
             return "[]"
         else:
             return json.loads(json_string)
+
+    """ add the class method  returns an instance with all attributes already set:"""
+    def create(cls, **dictionary):
+        """return an instance with all the attributes"""
+        if cls.__name__ == "Rectangle":
+            dummy = cls(1, 1)
+        else:
+            dummy = cls(1)
+        """dummy” instance to apply your real values"""
+        dummy.update(**dictionary)
+        return(dummy)
+    @classmethod
+    def load_from_file(cls):
+        """
+            Load List of Instance from JSON File
+            """
+        try:
+            with open(cls.__name__ + ".json", "r") as f:
+                return [cls.create(**dictionary) for
+                        dictionary in cls.from_json_string(f.read())]
+        except FileNotFoundError:
+            return []
