@@ -9,6 +9,7 @@ def max_integer(list=[]):
         """
 
     if len(list) == 0:
+        """ check list length"""
         return None
     res = list[0]
     xi = 1
