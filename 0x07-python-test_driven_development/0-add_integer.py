@@ -10,6 +10,11 @@ def add_integer(a, b=98):
     args:
         a(int, float) the first number
         b(int, float) the second number
+    Raises:
+        TypeError: in case the arguments are not int or float
+
+    Return:
+        (int) : Sum of the int a and b
         """
    if type(a) not in [int, float]:
         raise TypeError('a must be an integer')
