@@ -45,7 +45,8 @@ class Base:
         else:
             return json.loads(json_string)
 
-    """ add the class method  returns an instance with all attributes already set:"""
+    """ add the class method  returns an instance with 
+        all attributes already set:"""
     def create(cls, **dictionary):
         """return an instance with all the attributes"""
         if cls.__name__ == "Rectangle":
@@ -55,6 +56,7 @@ class Base:
         """dummy” instance to apply your real values"""
         dummy.update(**dictionary)
         return(dummy)
+
     @classmethod
     def load_from_file(cls):
         """
