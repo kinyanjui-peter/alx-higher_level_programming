@@ -23,7 +23,11 @@ class Student:
             """
             retrieves a dictionary representation of a Student instance
             """
-            return self.__dict__
+            return {
+                    "age " : self.age,
+                    "last_name" : self.last_name,
+                    "first_name " : self.first_name,
+                    }
         else:
             dic = {}
             for attr in attrs:
