@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""import json
-    class
+"""class
     """
 
 
@@ -22,9 +21,9 @@ class Student:
             retrieves a dictionary representation of a Student instance
             """
             return {
-                    "age " : self.age,
-                    "last_name" : self.last_name,
-                    "first_name " : self.first_name,
+                    "age ": self.age,
+                    "last_name": self.last_name,
+                    "first_name ": self.first_name,
                     }
         else:
             dic = {}
@@ -32,4 +31,3 @@ class Student:
                 if hasattr(self, attr):
                     dic[attr] = getattr(self, attr)
             return dic
-
