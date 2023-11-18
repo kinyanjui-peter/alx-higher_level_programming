@@ -7,19 +7,12 @@
  * If w or h is equal to 0 or not a positive integer, create an empty object */
 
 class Rectangle {
-  constructor (w, h){
+  constructor (w, h) {
     this.width = w;
     this.height = h;
-    function Create_object(){
-      if (this.width >= 0 || this.height >= 0) {
-	const emptyObject = new Rectangle();
-	  return emptyObject;
-      }
-      else {
-	      return {};
-      }
-      }
+    if (this.width <= 0 || this.height <= 0 || !Number.isInteger(this.width) || !Number.isInteger(this.height)) {
+      return {};
+    }
   }
-
 }
 module.exports = Rectangle;
