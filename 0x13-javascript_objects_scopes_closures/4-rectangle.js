@@ -15,26 +15,28 @@ class Rectangle {
     } else {
       this.width = w;
       this.height = h;
-      console.clear();
+     
       
     }
   }
 
   print () { 
     for (let c = 1; c <= this.height; c++) {
-      console.log('X'.repeat(this.width));
+      let row ='';
+      for (let m = 0; m < this.width; m++) {
+	row += 'X';
+      }
+      console.log(row);
     }
   }
   rotate () {
-    for (let c = 1; c <= this.width; c++) {
-      console.log('X'.repeat(this.height));
+    this.widtht = this.height;
+    this.height = this.widtht;
     }
 
-  }
   double () {
-    for (let c = 1; c <= (this.width * 2); c++) {
-      console.log('X'.repeat(this.height * 2));
-    }
+    this.widtht *= 2;
+    this.height *= 2;
   }
-}
+};
 module.exports = Rectangle;
