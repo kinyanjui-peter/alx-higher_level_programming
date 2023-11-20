@@ -14,6 +14,7 @@ WARNING: all classes who inherit from Base must be imported before calling Base.
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from model_state import Base, State
 
 database_url = 'mysql://localhost:3306/states'
 
