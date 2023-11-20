@@ -11,12 +11,13 @@ You must use the module SQLAlchemy
 Your script should connect to a MySQL server running on localhost at port 3306
 WARNING: all classes who inherit from Base must be imported before calling Base.metadata.create_all(engine)
 """
+import sys
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 
-database_url = 'mysql://localhost:3306/states'
+database_url = 'mysql+mysqldb://{}:{}@localhost:3306/hbtn_0e_6_usa'
 
 #map classes to tables
 Base = declarative_base()
@@ -28,7 +29,8 @@ class State(Base):
     name = Column(String(128), nullable=False)
 
 #Create an engine to connect to the MYSQL server
-engine = create_engine(database_url, echo=True)#set  echo=True for debugging
+if __name__ == "__main__":
+    engine = create_engine(database_url, echo=True)#set  echo=True for debugging
 
 #create tables inthe database
 Base.metadata.create_all(engine)
