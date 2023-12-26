@@ -8,7 +8,10 @@ You are not allow to import packages other than urllib and sys
 The value of this variable is different for each request
 You don’t need to check arguments passed to the script (number or type)
 You must use a with statement """
-import urllib
+import urllib.request
 import sys
 
-from urllib.response.get("")
+def read_url(url):
+    with urllib.request.urlopen(url) as resp:
+        req_id = resp.getheader('X-Request-Id')
+        print(req_id)
