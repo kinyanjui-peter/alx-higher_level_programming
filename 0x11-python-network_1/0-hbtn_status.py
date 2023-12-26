@@ -14,8 +14,8 @@ def read_url(url):
     with urllib.request.urlopen(url) as req:
         content = req.read()
         print("Body response:")
-        print("\t- type:", type(content))
-        print("\t- content:", content)
-        print("\t- utf8 content:", content.decode('utf-8'))
+        print("\t- type:\n", type(content))
+        print("\t- content:\n", content)
+        print("\t- utf8 content:\n", content.decode('utf-8'))
 if __name__ == "__main__":
-    read_url(url)
+    read_url(url)    
