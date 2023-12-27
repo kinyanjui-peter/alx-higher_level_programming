@@ -15,3 +15,5 @@ def read_url(url):
     with urllib.request.urlopen(url) as resp:
         req_id = resp.getheader('X-Request-Id')
         print(req_id)
+        head = resp.infor()
+        print(head)
