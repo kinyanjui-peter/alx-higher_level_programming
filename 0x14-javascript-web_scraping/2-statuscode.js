@@ -8,14 +8,14 @@
 const request = require('request');
 // check if arguments are more than 3
 if (process.argv.length !== 3) {
-    console.error('Arguments are not equal to 3');
-    process.exit(1);
+  console.error('Arguments are not equal to 3');
+  process.exit(1);
 }
 const reqUrl = process.argv[2];
 request.get(reqUrl, (error, response) => {
-    if (error) {
-        console.error(error);
-    } else {
-        console.log(`code: ${response.statusCode}`);
-    }
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(`code: ${response.statusCode}`);
+  }
 });
