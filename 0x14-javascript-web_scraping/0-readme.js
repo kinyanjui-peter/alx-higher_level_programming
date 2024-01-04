@@ -8,14 +8,19 @@
  */
 const fs = require('fs');
 
+// Check if the file path is provided as an argument
+if (process.argv.length !== 3) {
+    console.error('Usage: node 0-readme.js <file-path>');
+    process.exit(1);
+}
 // file to read
-const readFile = 'cisfun';
+const readFile = 'process.argv[2]';
 
 // Read cisfun file
 fs.readFile(readFile, 'utf-8', (err, data) => {
   if (err) {
-    console.error(`Cannot read file: ${err.message}`);
+    console.error(err);
   } else {
-    console.log(`The file ${readFile} contain:\n${data}`);
+    console.log(data);
   }
 });
