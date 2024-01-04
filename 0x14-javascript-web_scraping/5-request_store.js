@@ -13,7 +13,7 @@ if (process.argv.length !== 4) {
   console.error('Arguments Not Found');
   process.exit(1);
 }
-
+// variables
 const url = process.argv[2];
 const fileToStore = process.argv[3];
 
