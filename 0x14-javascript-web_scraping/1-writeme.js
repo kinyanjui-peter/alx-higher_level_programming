@@ -1,4 +1,5 @@
 #!/usr/bin/node
+
 /**
  * a script that writes a string to a file.
  * The first argument is the file path
@@ -14,6 +15,7 @@ if (process.argv.length !== 4) {
   console.error('No argument found');
   process.exit(1);
 }
+// get file path and string to write
 const filePath = process.argv[2];
 const stringToWrite = process.argv[3];
 
