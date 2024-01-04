@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#/usr/bin/node
 /**
  * script that gets the contents of a webpage and stores it in a file.
  * The first argument is the URL to request
@@ -28,5 +28,4 @@ request.get(url, 'utf-8', (error, response, body) => {
         console.log(`File succesfully written to ${fileToStore}`);
       }
     });
-  }
 });
