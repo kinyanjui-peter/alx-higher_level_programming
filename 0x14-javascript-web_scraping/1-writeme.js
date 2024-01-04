@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
 /**
  * a script that writes a string to a file.
  * The first argument is the file path
