@@ -9,16 +9,16 @@
 const process = require('process');
 const args = process.argv.slice(2);
 
-function largest_number(n) {
+function secondLargestNumber (n) {
   const length = n.length;
 
   if (length <= 1) {
     console.log(0);
   } else {
     const list = n.sort((a, b) => b - a);
-    const largest = list[1];
-    console.log(largest);
+    const secondLargest = list[1];
+    console.log(secondLargest);
   }
 }
 
-largest_number(args);
+secondLargestNumber(args);
