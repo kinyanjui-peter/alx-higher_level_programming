@@ -10,4 +10,4 @@ exports.add = function (a, b) {
   b = parseInt(b);
 
   return (a + b);
-}
+};

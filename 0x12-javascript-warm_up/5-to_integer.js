@@ -10,7 +10,6 @@ const arg2 = process.argv[2];
 const num = Number(arg2);
 if (isNaN(num)) {
   console.log('Not a number');
-}
-else {
+} else {
   console.log(`My number: ${num}`);
 }
