@@ -6,8 +6,8 @@
  * You are not allowed to use var
 */
 exports.add = function (a, b) {
-    a = parseInt(a);
-    b = parseInt(b);
+  a = parseInt(a);
+  b = parseInt(b);
 
-    return (a + b);
+  return (a + b);
 }
