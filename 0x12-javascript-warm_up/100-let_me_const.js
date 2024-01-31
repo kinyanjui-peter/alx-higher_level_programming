@@ -1,8 +1,5 @@
-#!/usr/bin/Node
+#!/usr/bin/node
 /**
- * modifies the value of myVar to 333 
+ * modifies the value of myVar to 333
  */
-exports.add =function(myVar) {
-  myVar = 333;
-  return (myVar);
-}
+const myVar = 333;
