@@ -7,8 +7,7 @@ def find_peak(list_of_integers):
     max_number = float('-inf')
     numbers = list_of_integers
     
-    if (list_of_integers == None):
-        print("None")
+    if not list_of_integers:
         return None
         
     # Iterate through the list of numbers
