@@ -2,6 +2,7 @@
 # function that finds a peak in a list of unsorted integers
 
 def find_peak(list_of_integers):
+    """ a function that findsthe largest number in alist"""
     # Initialize max_number to negative infinity
     max_number = float('-inf')
     numbers = list_of_integers
